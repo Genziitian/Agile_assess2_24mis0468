@@ -9,7 +9,7 @@ bookings = [
     {"name": "pallab", "type": "Deluxe", "nights": 4, "price": 150}
 ]
 
-# 2.calc and print final output for all guests
+# 2.calc and print final output for all guests 
 print("\n--- Guest Total Bills ---")
 for b in bookings:
     b["bill"] = b["nights"] * b["price"]
@@ -50,3 +50,5 @@ bookings.sort(key=get_bill, reverse=True)
 print("\n--- Bookings Sorted by Total Bill (Highest First) ---")
 for b in bookings:
     print(f"Name: {b['name']}, Room: {b['type']}, Bill: ${b['bill']}")
+
+#set 3 done for hotel system
